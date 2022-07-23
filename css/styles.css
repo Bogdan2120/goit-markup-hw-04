@@ -90,13 +90,13 @@ body {
 }
 
 .social-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-content: center;
   width: 44px;
   height: 44px;
   padding-top: 12px;
   padding-bottom: 12px;
-
-  text-align: center;
 }
 
 .social-link-icon {
@@ -340,6 +340,9 @@ body {
   margin-bottom: 10px;
 
   font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
   color: var(--text-color-accent);
 }
 
@@ -363,8 +366,12 @@ body {
   column-gap: 30px;
 }
 
-.logo-client {
+.logo-client-link {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   width: 170px;
+  height: 92px;
   padding-top: 16px;
   padding-bottom: 16px;
 
@@ -373,13 +380,9 @@ body {
   border-radius: 4px;
 }
 
-.logo-client:hover {
-  border: 1px solid var(--text-color-hover);
-  --color3: var(--text-color-hover);
-}
-
+.logo-client-link:hover,
 .logo-client-link:focus {
-  border: 1px solid var(--text-color-hover);
+  border-color: var(--text-color-hover);
   --color3: var(--text-color-hover);
 }
 
